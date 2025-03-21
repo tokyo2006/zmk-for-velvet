@@ -235,7 +235,7 @@
 
         Mouse {
             bindings = <
-&trans  &trans  &msc SCRL_UP  &mmv MOVE_UP  &msc SCRL_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &msc SCRL_UP  &mmv MOVE_UP  &msc SCRL_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans 
 &trans  &trans  &mkp MCLK     &mkp LCLK     &mkp RCLK       &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                &trans            &trans                &trans            &trans          &trans             &trans                &trans    &trans  &trans            &trans
