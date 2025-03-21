@@ -1,0 +1,13 @@
+file_format: "1"
+id: velvet
+name: Cygnus
+type: shield
+url:
+requires:
+  - pro_micro
+exposes:
+features:
+  - keys
+siblings:
+  - velvet_left
+  - velvet_right
