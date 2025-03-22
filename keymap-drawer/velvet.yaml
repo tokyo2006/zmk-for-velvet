@@ -37,10 +37,10 @@ layers:
   - {t: ., h: '>', s: '>'}
   - {t: /, h: '?', s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:backspace-outline$$', h: Navi}
   - {t: '$$mdi:keyboard-tab$$', h: Modify}
-  - {t: '2', s: '@'}
+  - {t: '$$mdi:backspace-outline$$', h: Navi}
   - {t: '3', s: '#'}
+  - {t: '2', s: '@'}
   - {t: '$$mdi:keyboard-space$$', h: Symbol}
   - {t: '$$mdi:keyboard-space$$', h: Symbol}
   - {t: '$$mdi:keyboard-return$$', h: Modify}
@@ -84,8 +84,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -178,8 +178,8 @@ layers:
   - F3
   - F4
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -272,8 +272,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
