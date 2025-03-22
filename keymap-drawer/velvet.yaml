@@ -44,8 +44,8 @@ layers:
   - {t: '$$mdi:backspace-outline$$', h: Navi}
   - {t: '$$mdi:keyboard-space$$', h: Symbol}
   - {t: '$$mdi:keyboard-return$$', h: Modify}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '0', s: )}
+  - {t: '1', s: '!'}
   - {t: '$$mdi:backspace-reverse$$', h: Mouse}
   Navi:
   - {t: ▽, type: trans}
