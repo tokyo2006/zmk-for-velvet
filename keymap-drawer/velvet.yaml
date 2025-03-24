@@ -42,11 +42,11 @@ layers:
   - {t: '3', s: '#'}
   - {t: '$$mdi:backspace-outline$$', h: Navi}
   - {t: '$$mdi:keyboard-tab$$', h: Modify}
-  - {t: '$$mdi:keyboard-space$$', h: Symbol}
   - {t: '$$mdi:keyboard-return$$', h: Modify}
+  - {t: '$$mdi:backspace-reverse$$', h: Mouse}
   - {t: '0', s: )}
   - {t: '1', s: '!'}
-  - {t: '$$mdi:backspace-reverse$$', h: Mouse}
+  - {t: '$$mdi:keyboard-space$$', h: Symbol}
   Navi:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -136,11 +136,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held alternate}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   Modify:
   - {t: ▽, type: trans}
   - {t: '1', s: '!'}
@@ -183,8 +183,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
   - {type: held alternate}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -231,10 +231,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Flash:
   - $$mdi:download-circle$$
   - {t: ▽, type: trans}
@@ -278,10 +278,10 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
 combos:
 - p: [3, 4]
   k: {t: '[', s: '{'}
