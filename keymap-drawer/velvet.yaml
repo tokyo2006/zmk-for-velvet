@@ -11,12 +11,12 @@ layers:
   - U
   - I
   - O
-  - {t: P, h: Gui+Sft+V}
-  - {t: \, h: '|', s: '|'}
+  - P
+  - {t: '=', h: +, s: +}
   - $$mdi:apple-keyboard-caps$$
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
@@ -38,14 +38,14 @@ layers:
   - {t: /, h: '?', s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: Symbol}
-  - {t: '2', s: '@'}
+  - Alt+Ctl+$$mdi:backspace-reverse$$
   - {t: '3', s: '#'}
   - {t: '$$mdi:backspace-outline$$', h: Navi}
   - {t: '$$mdi:keyboard-tab$$', h: Modify}
   - {t: '$$mdi:keyboard-return$$', h: Modify}
   - {t: '$$mdi:backspace-reverse$$', h: Mouse}
   - {t: '0', s: )}
-  - {t: '1', s: '!'}
+  - Gui+L
   - {t: '$$mdi:keyboard-space$$', h: Symbol}
   Navi:
   - {t: ▽, type: trans}
@@ -104,9 +104,9 @@ layers:
   - ^
   - '&'
   - '*'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - (
+  - )
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Esc
   - $$mdi:apple-keyboard-caps$$
@@ -155,10 +155,10 @@ layers:
   - {t: '0', s: )}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
+  - Ctl+A
+  - Ctl+S
+  - Ctl+D
+  - Ctl+F
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - $$mdi:apple-keyboard-shift$$
@@ -167,10 +167,10 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: X, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: C, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
   - '{'
   - '}'
   - F1
@@ -203,40 +203,40 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MCLK'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '&mkp LCLK'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MCLK'
   - '&mkp RCLK'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Flash:
-  - $$mdi:download-circle$$
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:arrow-up$$
@@ -305,3 +305,6 @@ combos:
   k: +
 - p: [18, 19]
   k: '='
+- p: [10, 11]
+  k: $$mdi:download-circle$$
+  l: [Flash]
