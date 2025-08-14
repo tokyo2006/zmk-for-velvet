@@ -54,15 +54,6 @@
 };
 
 / {
-    macros {
-        dongle_bootload_macro: bootload_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bootloader>;
-            label = "BOOTLOAD_MACRO";
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -131,6 +122,12 @@
             key-positions = <18 19>;
             timeout-ms = <50>;
         };
+
+        flash {
+            bindings = <&bootloader>;
+            key-positions = <10 11>;
+            layers = <5>;
+        };
     };
 
     behaviors {
@@ -190,10 +187,10 @@
 
         Qwery {
             bindings = <
-&as TILDE GRAVE  &kp Q            &kp W            &kp E         &kp R              &kp T       &kp Y         &kp U               &kp I                &kp O                    &hmr LG(LS(V)) P     &as PIPE BACKSLASH
-&kp CAPSLOCK     &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LCTRL D  &hml LEFT_SHIFT F  &kp G       &kp H         &hmr RIGHT_SHIFT J  &hmr RCTRL K         &hmr RIGHT_ALT L         &as COLON SEMICOLON  &as DOUBLE_QUOTES SINGLE_QUOTE
-&kp LEFT_SHIFT   &kp Z            &kp X            &kp C         &kp V              &kp B       &kp N         &kp M               &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH   &kp ENTER
-                 &ltq 2 SPACE     &kp NUMBER_2     &kp NUMBER_3  &ltq 1 BACKSPACE   &ltq 3 TAB  &ltq 3 ENTER  &ltq 4 DELETE       &kp N0               &kp NUMBER_1             &ltq 2 SPACE
+&as TILDE GRAVE  &kp Q                &kp W               &kp E            &kp R              &kp T       &kp Y         &kp U               &kp I                &kp O                    &kp P                &as PLUS EQUAL
+&kp CAPSLOCK     &hml LEFT_CONTROL A  &hml LEFT_ALT S     &hml LEFT_GUI D  &hml LEFT_SHIFT F  &kp G       &kp H         &hmr RIGHT_SHIFT J  &hmr RCTRL K         &hmr RIGHT_ALT L         &as COLON SEMICOLON  &as DOUBLE_QUOTES SINGLE_QUOTE
+&kp LEFT_SHIFT   &kp Z                &kp X               &kp C            &kp V              &kp B       &kp N         &kp M               &as LESS_THAN COMMA  &as GREATER_THAN PERIOD  &as QUESTION SLASH   &kp ENTER
+                 &ltq 2 SPACE         &kp LA(LC(DELETE))  &kp NUMBER_3     &ltq 1 BACKSPACE   &ltq 3 TAB  &ltq 3 ENTER  &ltq 4 DELETE       &kp N0               &kp LG(L)                &ltq 2 SPACE
             >;
 
             label = "Qwery";
@@ -212,10 +209,10 @@
 
         Symbol {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND    &kp STAR                        &trans              &trans      &kp LEFT_PARENTHESIS
-&trans  &kp ESCAPE       &kp CAPSLOCK  &kp HOME  &kp END     &kp UNDER    &kp MINUS  &kp RIGHT_SHIFT  &kp PAGE_UP                     &kp PAGE_DOWN       &kp INSERT  &trans
-&trans  &kp BACKSPACE    &trans        &trans    &trans      &kp TILDE    &kp GRAVE  &as PLUS EQUAL   &as DOUBLE_QUOTES SINGLE_QUOTE  &as PIPE BACKSLASH  &kp DEL     &trans
-        &trans           &trans        &trans    &trans      &trans       &trans     &trans           &trans                          &trans              &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND    &kp STAR                        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp ESCAPE       &kp CAPSLOCK  &kp HOME  &kp END     &kp UNDER    &kp MINUS  &kp RIGHT_SHIFT  &kp PAGE_UP                     &kp PAGE_DOWN         &kp INSERT             &trans
+&trans  &kp BACKSPACE    &trans        &trans    &trans      &kp TILDE    &kp GRAVE  &as PLUS EQUAL   &as DOUBLE_QUOTES SINGLE_QUOTE  &as PIPE BACKSLASH    &kp DEL                &trans
+        &trans           &trans        &trans    &trans      &trans       &trans     &trans           &trans                          &trans                &trans
             >;
 
             label = "Symbol";
@@ -224,8 +221,8 @@
         Modify {
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6       &kp NUMBER_7    &kp NUMBER_8      &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans  &kp LG(A)     &kp LG(S)     &kp LG(D)     &kp LG(F)     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &trans
-&trans  &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp F1          &kp F2            &kp F3        &kp F4        &trans
+&trans  &kp LC(A)     &kp LC(S)     &kp LC(D)     &kp LC(F)     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &trans
+&trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp F1          &kp F2            &kp F3        &kp F4        &trans
         &trans        &trans        &trans        &trans        &trans            &trans             &trans          &trans            &trans        &trans
             >;
 
@@ -234,10 +231,10 @@
 
         Mouse {
             bindings = <
-&trans  &trans  &msc SCRL_UP  &mmv MOVE_UP  &msc SCRL_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mkp MCLK     &mkp LCLK     &mkp RCLK       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans          &trans          &trans           &trans     &trans  &trans  &trans  &trans  &trans  &trans
+        &mkp LCLK  &trans          &trans          &mkp MCLK        &mkp RCLK  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "Mouse";
@@ -245,7 +242,7 @@
 
         Flash {
             bindings = <
-&dongle_bootload_macro  &trans      &trans        &kp UP    &trans     &trans             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
+&trans &trans      &trans        &kp UP    &trans     &trans             &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
 &trans                  &bt BT_NXT  &kp LEFT      &kp DOWN  &kp RIGHT  &kp C_VOLUME_UP    &kp C_BRI_UP  &bt BT_CLR    &trans        &trans        &trans        &trans
 &trans                  &bt BT_PRV  &out OUT_TOG  &trans    &trans     &kp C_VOLUME_DOWN  &kp C_BRI_DN  &trans        &trans        &trans        &trans        &trans
                         &trans      &trans        &trans    &trans     &trans             &trans        &trans        &trans        &trans        &trans
